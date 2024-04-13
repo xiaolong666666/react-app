@@ -1,5 +1,9 @@
 import React from "react";
-import Compare from "./components/Compare";
+// import Compare from "./components/Base/Compare";
+// import Hooks from "./components/Base/Hooks";
+// import LogReport from "./components/Base/LogReport";
+// import RenderControl from "./components/Base/RenderControl";
+import ReduxManageMent from "./components/StateManageMent/ReduxManageMent";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -20,7 +24,12 @@ function App() {
           Learn React
         </a>
       </header>
-      <Compare />
+      {/* <Compare /> */}
+      {/* <Hooks /> */}
+      {/* @ts-ignore; */}
+      {/* <LogReport /> */}
+      {/* <RenderControl /> */}
+      <ReduxManageMent />
     </div>
   );
 }
