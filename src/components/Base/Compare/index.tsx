@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Card from "@/components/xl-design/Card";
 import ClassComponent from "./ClassComponent";
 import FunctionComponent from "./FunctionComponent";
 
@@ -10,12 +11,11 @@ const Compare = () => {
   };
 
   return (
-    <div>
-      <h2>Compare</h2>
+    <Card title="Compare">
       <button onClick={onChangeUser}>change user</button>
       <ClassComponent user={user} />
       <FunctionComponent user={user} />
-    </div>
+    </Card>
   );
 };
 
