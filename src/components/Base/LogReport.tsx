@@ -1,20 +1,20 @@
 import { Component } from "react";
 import withLogReport from "@/components/HOC/withLogReport";
+import { Card } from "@/components/xl";
 
-class MyComponent extends Component {
+class BaseLogReport extends Component {
   render() {
     return (
-      <div>
-        <h3>MyComponent</h3>
+      <Card title="LogReport">
         <div id="xl_text">xl_text</div>
         <button id="xl_button">xl_primary_button</button>
-      </div>
+      </Card>
     );
   }
 }
 
-const MyComponentLogReport = withLogReport({
+const LogReport = withLogReport({
   xl_button: "事件曝光：xl_primary_button_report",
-})(MyComponent);
+})(BaseLogReport);
 
-export default MyComponentLogReport;
+export default LogReport;
