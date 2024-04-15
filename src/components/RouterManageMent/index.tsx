@@ -1,4 +1,4 @@
-import { Card } from "@/components/xl";
+import { Card } from "xl";
 import { BrowserRouter, Routes, Route } from "./react-router-dom";
 import Page from "./Page";
 import News from "./Page/News";

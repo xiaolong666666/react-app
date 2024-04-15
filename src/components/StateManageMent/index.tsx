@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Nav } from "@/components/xl";
+import { Nav } from "xl";
 
 const StateManageMent = () => {
   const dataSource = [

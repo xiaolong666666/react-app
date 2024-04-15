@@ -1,6 +1,6 @@
 import { Component } from "react";
 import withLogReport from "@/components/HOC/withLogReport";
-import { Card } from "@/components/xl";
+import { Card } from "xl";
 
 class BaseLogReport extends Component {
   render() {

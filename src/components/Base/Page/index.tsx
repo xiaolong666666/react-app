@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import { Card } from "@/components/xl";
+import { Card } from "xl";
 
 const Page = () => {
   const { id } = useParams();

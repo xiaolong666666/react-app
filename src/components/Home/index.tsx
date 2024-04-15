@@ -1,4 +1,4 @@
-import { Nav } from "@/components/xl";
+import { Nav } from "xl";
 
 const Home = () => {
   const dataSource = [

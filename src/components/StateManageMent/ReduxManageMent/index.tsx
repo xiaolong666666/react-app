@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from "./redux";
 import { Provider } from "./react-redux";
-import { Card } from "@/components/xl";
+import { Card } from "xl";
 import Container from "./Container";
 
 const initState = {

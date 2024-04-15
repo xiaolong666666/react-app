@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { Nav } from "@/components/xl";
+import { Nav } from "xl";
 
 const Base = () => {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
 import React, { Component, memo } from "react";
-import { Card } from "@/components/xl";
+import { Card } from "xl";
 
 const Child = memo(({ number }: { number: number }) => {
   console.log("child");

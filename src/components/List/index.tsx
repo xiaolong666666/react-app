@@ -1,4 +1,4 @@
-import { Card, VirtualList } from "@/components/xl";
+import { Card, VirtualList } from "xl";
 import styles from "./index.module.less";
 
 const List = () => {

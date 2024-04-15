@@ -1,4 +1,4 @@
-import { Card } from "@/components/xl";
+import { Card } from "xl";
 import Context from "./Context";
 import LifeCycle from "./LifeCycle";
 import Reducer from "./Reducer";

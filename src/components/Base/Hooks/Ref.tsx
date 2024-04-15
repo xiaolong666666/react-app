@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Dialog } from "@/components/xl";
+import { Dialog } from "xl";
 
 const Ref = () => {
   const inputRef = useRef<any>();

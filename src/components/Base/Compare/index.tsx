@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Card from "@/components/xl/Card";
+import { Card } from "xl";
 import ClassComponent from "./ClassComponent";
 import FunctionComponent from "./FunctionComponent";
 
