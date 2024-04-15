@@ -2,7 +2,8 @@ import withPortal from "@/components/HOC/withPortal";
 import Card from "./Card";
 import Nav from "./Nav";
 import BaseDialog from "./Dialog";
+import VirtualList from "./VirtualList";
 
 const Dialog = withPortal(BaseDialog);
 
-export { Card, Nav, Dialog };
+export { Card, Nav, Dialog, VirtualList };
