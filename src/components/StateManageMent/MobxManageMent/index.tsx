@@ -1,7 +1,17 @@
 import React, { Component } from "react";
+import { TodoList } from "./store";
+import TodoListView from "./TodoListView";
 
-export default class index extends Component {
+const todoList = new TodoList();
+
+class Index extends Component {
   render() {
-    return <div>index</div>;
+    return (
+      <div>
+        <TodoListView todoList={todoList} />
+      </div>
+    );
   }
 }
+
+export default Index;

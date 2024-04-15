@@ -1,4 +1,4 @@
-import { createBrowserHistory, createHashHistory } from "history";
+import { createBrowserHistory /* createHashHistory */ } from "history";
 import React, { useLayoutEffect, useRef, useState, FC, ReactNode } from "react";
 import { Router, useLocation } from "./react-router";
 
