@@ -15,7 +15,7 @@ interface Props {
   children: (item: Record<string, any>) => ReactNode;
 }
 
-const VirtualList: React.FC<Props> = ({
+const VirtualScroller: React.FC<Props> = ({
   dataSource,
   pageSize = 10,
   children,
@@ -91,4 +91,4 @@ const VirtualList: React.FC<Props> = ({
   );
 };
 
-export default VirtualList;
+export default VirtualScroller;

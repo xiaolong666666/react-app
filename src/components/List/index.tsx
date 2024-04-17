@@ -1,4 +1,4 @@
-import { Card, VirtualList } from "xl";
+import { Card, VirtualScroller } from "xl";
 import styles from "./index.module.less";
 
 const List = () => {
@@ -9,13 +9,13 @@ const List = () => {
   }));
   return (
     <Card title="虚拟长列表">
-      <VirtualList dataSource={list} pageSize="10">
+      <VirtualScroller dataSource={list} pageSize="10">
         {(item) => (
           <div key={item.id} className={styles.item}>
             {item.label}
           </div>
         )}
-      </VirtualList>
+      </VirtualScroller>
     </Card>
   );
 };

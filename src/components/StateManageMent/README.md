@@ -5,4 +5,4 @@ Closure
 Global / Window
 
 redux 发布订阅
-Proxy
+mobx Proxy

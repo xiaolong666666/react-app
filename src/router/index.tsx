@@ -19,6 +19,9 @@ import ReduxManageMent from "@/components/StateManageMent/ReduxManageMent";
 import MobxManageMent from "@/components/StateManageMent/MobxManageMent";
 import RouterManageMent from "@/components/RouterManageMent";
 import List from "@/components/List";
+import Network from "@/components/Network";
+import NetworkUser from "@/components/Network/User";
+import NetworkArticle from "@/components/Network/Article";
 
 // 异步加载路由
 const Hooks = lazy(() => import("@/components/Base/Hooks"));
@@ -109,6 +112,12 @@ const Router = () => {
         {/* 根路由下实验🧪 */}
         <Route path="/router-management" element={<RouterManageMent />} />
         <Route path="/virtual-list" element={<List />} />
+        <Route path="/network" element={<Network />}>
+          <Route index element={<NetworkUser />} />
+          <Route path="user" element={<NetworkUser />} />
+          <Route path="article" element={<NetworkArticle />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

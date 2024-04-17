@@ -4,7 +4,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "paths": {
       "@/*": ["src/*"],
-      "xl": ["src/components/xl"]
+      "xl": ["src/components/xl"],
+      "request": ["src/utils/request"]
     },
     "allowJs": true,
     "skipLibCheck": true,

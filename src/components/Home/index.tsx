@@ -22,6 +22,10 @@ const Home = () => {
       to: "/virtual-list",
       label: "虚拟长列表",
     },
+    {
+      to: "/network",
+      label: "网络🛜",
+    },
   ];
   return (
     <>
