@@ -1,4 +1,5 @@
 import { Nav } from "xl";
+import Directory from "../Directory";
 
 const Home = () => {
   const dataSource = [
@@ -31,6 +32,7 @@ const Home = () => {
     <>
       <h2>Home</h2>
       <Nav dataSource={dataSource} />
+      <Directory />
     </>
   );
 };

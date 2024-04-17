@@ -1,6 +1,5 @@
 import Router from "@/router";
 // import RouterManageMent from "@/components/RouterManageMent";
-import "./App.css";
 
 function App() {
   return (

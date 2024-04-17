@@ -1,0 +1,39 @@
+.header_wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.expanded {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -6px;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+}
+
+.not_expanded {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -6px;
+    top: 0;
+  }
+}
+
+.visible {
+  visibility: visible;
+  &::after {
+    visibility: visible;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  &::after {
+    visibility: hidden;
+  }
+}

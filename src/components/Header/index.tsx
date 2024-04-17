@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import styles from "./index.module.less";
 import logo from "@/logo.svg";
 
 const Header = () => {
@@ -8,9 +8,9 @@ const Header = () => {
   const obBackHome = () => navigate("/");
 
   return (
-    <header className="App-header">
+    <header className={styles.header}>
       <button onClick={obBackHome}>返回首页</button>
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src={logo} className={styles.logo} alt="logo" />
     </header>
   );
 };

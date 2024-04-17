@@ -5,7 +5,8 @@
     "paths": {
       "@/*": ["src/*"],
       "xl": ["src/components/xl"],
-      "request": ["src/utils/request"]
+      "request": ["src/utils/request"],
+      "styles": ["src/styles"]
     },
     "allowJs": true,
     "skipLibCheck": true,

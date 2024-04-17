@@ -24,6 +24,7 @@ module.exports = {
       "@": path.resolve(__dirname, "src"),
       xl: path.resolve(__dirname, "src/components/xl"),
       request: path.resolve(__dirname, "src/utils/request"),
+      styles: path.resolve(__dirname, "src/styles"),
     })
   ),
   devServer: overrideDevServer((config) => {
