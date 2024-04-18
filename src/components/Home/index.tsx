@@ -1,5 +1,4 @@
 import { Nav } from "xl";
-import Directory from "../Directory";
 
 const Home = () => {
   const dataSource = [
@@ -19,20 +18,20 @@ const Home = () => {
       to: "/router-management",
       label: "路由管理",
     },
-    {
-      to: "/virtual-list",
-      label: "虚拟长列表",
-    },
+
     {
       to: "/network",
       label: "网络🛜",
+    },
+    {
+      to: "/record",
+      label: "虚拟长列表",
     },
   ];
   return (
     <>
       <h2>Home</h2>
       <Nav dataSource={dataSource} />
-      <Directory />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { Card, VirtualScroller } from "xl";
 import styles from "./index.module.less";
 
-const List = () => {
+const VirtualList = () => {
   // @ts-ignore
   const list: any = [...new Array(1000).keys()].map((n) => ({
     id: n + 1,
@@ -20,4 +20,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default VirtualList;
