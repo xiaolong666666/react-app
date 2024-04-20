@@ -11,6 +11,10 @@ const Record = () => {
       to: "/record/directory",
       label: "文件目录",
     },
+    {
+      to: "/record/scroll-follow",
+      label: "滚动跟随",
+    },
   ];
   return (
     <>

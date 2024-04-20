@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  padding: 0 20px 20px;
+  border: 1px solid #f0f0f0;
+  height: 300px;
+  overflow-y: auto;
+
+  .header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    padding: 20px 0;
+    z-index: 666;
+    background: #fff;
+
+    .menu {
+      margin: 0 8px;
+      padding: 4px 8px;
+      border: 1px solid #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .active {
+      border: 1px solid #f80;
+    }
+  }
+
+  .main {
+  }
+}

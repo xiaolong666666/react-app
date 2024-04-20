@@ -24,6 +24,7 @@ import NetworkArticle from "@/components/Network/Article";
 import Record from "@/components/Record";
 import RecordVirtualList from "@/components/Record/VirtualList";
 import RecordDirectory from "@/components/Record/Directory";
+import RecordScrollFollow from "@/components/Record/ScrollFollow";
 
 // 异步加载路由
 const Hooks = lazy(() => import("@/components/Base/Hooks"));
@@ -123,6 +124,7 @@ const Router = () => {
           <Route index element={<RecordVirtualList />} />
           <Route path="virtual-list" element={<RecordVirtualList />} />
           <Route path="directory" element={<RecordDirectory />} />
+          <Route path="scroll-follow" element={<RecordScrollFollow />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>

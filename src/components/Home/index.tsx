@@ -25,7 +25,7 @@ const Home = () => {
     },
     {
       to: "/record",
-      label: "虚拟长列表",
+      label: "记录",
     },
   ];
   return (

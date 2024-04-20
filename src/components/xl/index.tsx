@@ -5,7 +5,8 @@ import Loading from "./Loading";
 import Tree from "./Tree";
 import BaseDialog from "./Dialog";
 import VirtualScroller from "./VirtualScroller";
+import AnchorScroller from "./AnchorScroller";
 
 const Dialog = withPortal(BaseDialog);
 
-export { Card, Nav, Loading, Tree, Dialog, VirtualScroller };
+export { Card, Nav, Loading, Tree, Dialog, AnchorScroller, VirtualScroller };
