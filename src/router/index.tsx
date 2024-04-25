@@ -21,6 +21,8 @@ import RouterManageMent from "@/components/RouterManageMent";
 import Network from "@/components/Network";
 import NetworkUser from "@/components/Network/User";
 import NetworkArticle from "@/components/Network/Article";
+import NetworkPoll from "@/components/Network/Poll";
+import NetworkSSE from "@/components/Network/SSE";
 import NetworkChat from "@/components/Network/Chat";
 import Record from "@/components/Record";
 import RecordVirtualList from "@/components/Record/VirtualList";
@@ -119,6 +121,8 @@ const Router = () => {
           <Route index element={<NetworkUser />} />
           <Route path="user" element={<NetworkUser />} />
           <Route path="article" element={<NetworkArticle />} />
+          <Route path="poll" element={<NetworkPoll />} />
+          <Route path="sse" element={<NetworkSSE />} />
           <Route path="chat" element={<NetworkChat />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>

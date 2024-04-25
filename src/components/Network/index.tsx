@@ -12,6 +12,14 @@ const Network = () => {
       label: "文章",
     },
     {
+      to: "/network/poll",
+      label: "轮询",
+    },
+    {
+      to: "/network/sse",
+      label: "服务器推送",
+    },
+    {
       to: "/network/chat",
       label: "聊天室",
     },

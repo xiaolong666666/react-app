@@ -14,6 +14,18 @@ app.get("/articles", async (req, res) => {
   res.json(getArticleList());
 });
 
+app.get("/sse", (req, res) => {
+  res.writeHead(200, {
+    "Content-Type": "text/event-stream",
+    "Cache-Control": "no-cache",
+    Connection: "keep-alive",
+  });
+
+  setInterval(() => {
+    res.end(`data: ${new Date().toLocaleString()}\n\n`);
+  }, 1000);
+});
+
 app.listen(3333, () => {
   console.log("app listening on http://localhost:3333!");
 });

@@ -62,6 +62,7 @@ const AnchorScroller: React.FC<Props> = ({ dataSource }) => {
       return () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         containerRef.current.removeEventListener("scroll", onScroll, false);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         containerRef.current.removeEventListener(
           "scroll",
           changeScrollBehaviorDebounce,
@@ -69,6 +70,7 @@ const AnchorScroller: React.FC<Props> = ({ dataSource }) => {
         );
       };
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onMenuClick = (id: DataSource["id"]) => {
