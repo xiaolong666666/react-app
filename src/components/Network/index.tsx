@@ -11,6 +11,10 @@ const Network = () => {
       to: "/network/article",
       label: "文章",
     },
+    {
+      to: "/network/chat",
+      label: "聊天室",
+    },
   ];
   return (
     <>
