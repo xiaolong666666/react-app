@@ -61,9 +61,9 @@ const AnchorScroller: React.FC<Props> = ({ dataSource }) => {
       );
       return () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        containerRef.current.removeEventListener("scroll", onScroll, false);
+        containerRef.current?.removeEventListener("scroll", onScroll, false);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        containerRef.current.removeEventListener(
+        containerRef.current?.removeEventListener(
           "scroll",
           changeScrollBehaviorDebounce,
           false
