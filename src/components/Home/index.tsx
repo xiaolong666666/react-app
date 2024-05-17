@@ -27,6 +27,10 @@ const Home = () => {
       to: "/record",
       label: "记录",
     },
+    {
+      to: "/chart",
+      label: "图表",
+    },
   ];
   return (
     <>

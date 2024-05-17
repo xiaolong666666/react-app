@@ -28,6 +28,10 @@ import Record from "@/components/Record";
 import RecordVirtualList from "@/components/Record/VirtualList";
 import RecordDirectory from "@/components/Record/Directory";
 import RecordScrollFollow from "@/components/Record/ScrollFollow";
+import Chart from "@/components/Chart";
+import ChartWorkFlow from "@/components/Chart/WorkFlow";
+import ChartWorkFlowOverview from "@/components/Chart/WorkFlow/Overview";
+import ChartWorkFlowList from "@/components/Chart/WorkFlow/List";
 
 // 异步加载路由
 const Hooks = lazy(() => import("@/components/Base/Hooks"));
@@ -131,6 +135,16 @@ const Router = () => {
           <Route path="virtual-list" element={<RecordVirtualList />} />
           <Route path="directory" element={<RecordDirectory />} />
           <Route path="scroll-follow" element={<RecordScrollFollow />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+        <Route path="/chart" element={<Chart />}>
+          <Route index element={<ChartWorkFlow />} />
+          <Route path="workflow" element={<ChartWorkFlow />}>
+            <Route index element={<ChartWorkFlow />} />
+            <Route path="overview" element={<ChartWorkFlowOverview />} />
+            <Route path="list" element={<ChartWorkFlowList />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>

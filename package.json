@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/x6": "^2.18.1",
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,9 +12,12 @@
     "@types/node": "^16.18.96",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
+    "ahooks": "^3.7.11",
+    "antd": "^5.17.2",
     "axios": "^1.6.8",
     "classnames": "^2.5.1",
     "history": "^5.3.0",
+    "lodash": "^4.17.21",
     "mobx": "^6.12.3",
     "mobx-react": "^9.1.1",
     "react": "^18.2.0",
@@ -53,6 +57,7 @@
   },
   "devDependencies": {
     "@types/less": "^3.0.6",
+    "@types/lodash": "^4.17.4",
     "customize-cra": "^1.0.0",
     "express": "^4.19.2",
     "less": "^4.2.0",
