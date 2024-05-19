@@ -8,12 +8,12 @@ const { Sider, Content } = Layout;
 const Page = () => {
   const menus = [
     {
-      key: "workflow",
-      label: <NavLink to="/chart/workflow/overview">workflow</NavLink>,
+      key: "overview",
+      label: <NavLink to="/chart/workflow/overview">概览</NavLink>,
     },
     {
       key: "list",
-      label: <NavLink to="/chart/workflow/list">list</NavLink>,
+      label: <NavLink to="/chart/workflow/list">列表</NavLink>,
     },
   ];
   return (

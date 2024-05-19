@@ -39,7 +39,7 @@ const Overview = () => {
 
   const initNode = useCallback(() => {
     if (!isEmpty(nodeList)) {
-      nodeList.map((nodeInfo: any) => {
+      nodeList.forEach((nodeInfo: any) => {
         const node = new Shape.Circle({
           ...nodeInfo,
           x: Math.random() * 600,
@@ -63,7 +63,7 @@ const Overview = () => {
 
   const initEdge = useCallback(() => {
     if (!isEmpty(edgeList)) {
-      edgeList.map((edgeInfo: any) => {
+      edgeList.forEach((edgeInfo: any) => {
         const edge = new Shape.Edge({
           source: edgeInfo.source,
           target: edgeInfo.target,
@@ -73,7 +73,7 @@ const Overview = () => {
         graph.current.addEdge(edge);
       });
     }
-  }, [nodeList]);
+  }, [edgeList]);
 
   useEffect(() => {
     initEdge();

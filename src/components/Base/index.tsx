@@ -1,8 +1,7 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Nav } from "xl";
 
 const Base = () => {
-  const navigate = useNavigate();
   const dataSource = [
     {
       to: "/base/compare",
@@ -20,16 +19,14 @@ const Base = () => {
       to: "/base/render-control",
       label: "渲染控制",
     },
+    {
+      to: `/base/page/${Math.floor(Math.random() * 10)}?x=xxx&y=yyy`,
+      label: "go Page",
+    },
   ];
-
-  const goPage = () => {
-    navigate(`/base/page/${Math.floor(Math.random() * 10)}?x=xxx&y=yyy`);
-  };
   return (
     <>
-      <h2>Base</h2>
       <Nav dataSource={dataSource} />
-      <button onClick={goPage}>go Page </button>
       <Outlet />
     </>
   );

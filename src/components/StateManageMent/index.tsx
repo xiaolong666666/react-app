@@ -14,7 +14,6 @@ const StateManageMent = () => {
   ];
   return (
     <>
-      <h2>State ManageMent</h2>
       <Nav dataSource={dataSource} />
       <Outlet />
     </>

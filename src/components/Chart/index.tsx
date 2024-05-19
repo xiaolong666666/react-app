@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Nav } from "xl";
 
-const Base = () => {
+const Chart = () => {
   const dataSource = [
     {
       to: "/char/workflow",
@@ -11,11 +11,10 @@ const Base = () => {
 
   return (
     <>
-      <h2>Chart</h2>
       <Nav dataSource={dataSource} />
       <Outlet />
     </>
   );
 };
 
-export default Base;
+export default Chart;

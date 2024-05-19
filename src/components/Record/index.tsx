@@ -18,7 +18,6 @@ const Record = () => {
   ];
   return (
     <>
-      <h2>Record</h2>
       <Nav dataSource={dataSource} />
       <Outlet />
     </>
