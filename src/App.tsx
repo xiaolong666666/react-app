@@ -7,6 +7,8 @@ import Layout from "@/components/Layout";
 function App() {
   return (
     <BrowserRouter basename="/">
+      {/* 非根目录时 */}
+      {/* /react-base & "homepage": "react-base" */}
       <Header />
       <Layout>
         <Router />

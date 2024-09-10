@@ -3,6 +3,7 @@ import Context from "./Context";
 import LifeCycle from "./LifeCycle";
 import Reducer from "./Reducer";
 import Ref from "./Ref";
+import CustomEffect from "./CustomEffect";
 
 const Hooks = () => {
   return (
@@ -11,6 +12,7 @@ const Hooks = () => {
       <Reducer />
       <Ref />
       <Context />
+      <CustomEffect />
     </Card>
   );
 };
