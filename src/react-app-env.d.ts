@@ -6,3 +6,4 @@ declare module "*.module.less" {
 }
 
 declare module "lodash";
+declare module 'xl-react-echarts';

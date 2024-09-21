@@ -31,6 +31,7 @@ import Chart from "@/components/Chart";
 import ChartWorkFlow from "@/components/Chart/WorkFlow";
 import ChartWorkFlowOverview from "@/components/Chart/WorkFlow/Overview";
 import ChartWorkFlowList from "@/components/Chart/WorkFlow/List";
+import ChartEcharts from "@/components/Chart/Echarts";
 
 // 异步加载路由
 const Hooks = lazy(() => import("@/components/Base/Hooks"));
@@ -205,6 +206,11 @@ export const routes = [
             visible: false,
           },
         ],
+      },
+      {
+        path: "echarts",
+        label: "xl-react-echarts",
+        element: <ChartEcharts />,
       },
       {
         path: "*",
