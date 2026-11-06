@@ -1,10 +1,14 @@
 import { Layout, Menu, MenuProps } from "antd";
 import { useNavigate } from "react-router-dom";
+import { useLocalStorage } from "@/utils/hooks";
+import { getRandomVerifyCode } from "@/utils/tools";
 import styles from "./index.module.less";
 import logo from "@/logo.svg";
+import { useCallback } from "react";
 
 const Header = () => {
   const navigate = useNavigate();
+  const [token, setToken] = useLocalStorage("app-token", getRandomVerifyCode);
 
   const obBackHome = () => navigate("/");
 
@@ -12,6 +16,11 @@ const Header = () => {
     key,
     label: `nav ${key}`,
   }));
+
+  const generateRandomToken = useCallback(() => {
+    const newToken = getRandomVerifyCode();
+    setToken(newToken)
+  }, [setToken]);
 
   return (
     <Layout.Header className={styles.header}>
@@ -25,6 +34,7 @@ const Header = () => {
         items={items1}
         style={{ flex: 1, minWidth: 0 }}
       />
+      <div onClick={generateRandomToken}>app-token：{token}</div>
       <div>小龙</div>
     </Layout.Header>
   );
